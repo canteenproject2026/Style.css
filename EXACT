@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Canteen Pre-Order</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🍴 College Canteen</h1>
+  <p>Pre-Order करा • वेळ वाचवा • रांगेत उभे राहू नका</p>
+</header>
+
+<section class="container">
+
+  <h2>🍔 Food Menu</h2>
+
+  <div class="menu">
+
+    <div class="food">
+      <h3>🥪 Veg Sandwich</h3>
+      <p>₹40</p>
+      <button onclick="addItem('Veg Sandwich',40)">Add +</button>
+    </div>
+
+    <div class="food">
+      <h3>🍔 Veg Burger</h3>
+      <p>₹50</p>
+      <button onclick="addItem('Veg Burger',50)">Add +</button>
+    </div>
+
+    <div class="food">
+      <h3>🥟 Samosa</h3>
+      <p>₹15</p>
+      <button onclick="addItem('Samosa',15)">Add +</button>
+    </div>
+
+    <div class="food">
+      <h3>🍟 French Fries</h3>
+      <p>₹40</p>
+      <button onclick="addItem('French Fries',40)">Add +</button>
+    </div>
+
+    <div class="food">
+      <h3>🍵 Tea</h3>
+      <p>₹10</p>
+      <button onclick="addItem('Tea',10)">Add +</button>
+    </div>
+
+    <div class="food">
+      <h3>🥤 Cold Drink</h3>
+      <p>₹30</p>
+      <button onclick="addItem('Cold Drink',30)">Add +</button>
+    </div>
+
+  </div>
+
+  <div class="order-box">
+    <h2>🛒 तुमची Order</h2>
+
+    <div id="cart">
+      <p>अजून कोणतीही वस्तू निवडलेली नाही.</p>
+    </div>
+
+    <h3 id="total">Total: ₹0</h3>
+
+    <input type="text" id="name" placeholder="तुमचे नाव">
+    <input type="tel" id="phone" placeholder="मोबाईल नंबर">
+
+    <select id="time">
+      <option value="">Pickup Time निवडा</option>
+      <option>11:00 AM</option>
+      <option>11:30 AM</option>
+      <option>12:00 PM</option>
+      <option>12:30 PM</option>
+      <option>1:00 PM</option>
+      <option>1:30 PM</option>
+    </select>
+
+    <select id="payment">
+      <option value="">Payment Method</option>
+      <option>Cash</option>
+      <option>UPI</option>
+    </select>
+
+    <button class="order-btn" onclick="placeOrder()">
+      ✅ Place Pre-Order
+    </button>
+
+    <div id="message"></div>
+
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
